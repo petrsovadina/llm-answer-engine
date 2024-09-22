@@ -16,9 +16,9 @@
 <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjVodHcyZWd0MDJtd2RiN2xqbGdtOTdrYzZiMnhlMmZidDRzYm15dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PXkHjFlbgty03C6TAL/giphy.gif"><br>
 </div>
 
-This repository contains the code and instructions needed to build a sophisticated answer engine that leverages the capabilities of [Groq](https://www.groq.com/), [Mistral AI's Mixtral](https://mistral.ai/news/mixtral-of-experts/), [Langchain.JS](https://js.langchain.com/docs/), [Brave Search](https://search.brave.com/), [Serper API](https://serper.dev/), and [OpenAI](https://openai.com/). Designed to efficiently return sources, answers, images, videos, and follow-up questions based on user queries, this project is an ideal starting point for developers interested in natural language processing and search technologies.
+Tento repozitář obsahuje kód a instrukce potřebné k vytvoření sofistikovaného stroje na odpovědi, který využívá schopnosti [Groq](https://www.groq.com/), [Mistral AI's Mixtral](https://mistral.ai/news/mixtral-of-experts/), [Langchain.JS](https://js.langchain.com/docs/), [Brave Search](https://search.brave.com/), [Serper API](https://serper.dev/), a [OpenAI](https://openai.com/). Navržen tak, aby efektivně vrátil zdroje, odpovědi, obrázky, videa a následné otázky na základě dotazů uživatele, je tento projekt ideálním výchozím bodem pro vývojáře, kteří se zajímají o zpracování přirozeného jazyka a vyhledávací technologie.
 
-## YouTube Tutorials
+## YouTube Tutoriály
 
 <div style="display: flex; justify-content: center; align-items: center;">
     <a href="https://youtu.be/43ZCeBTcsS8">
@@ -36,112 +36,112 @@ This repository contains the code and instructions needed to build a sophisticat
 </div>
 
 
-## Technologies Used
+## Použité technologie
 
-- **Next.js**: A React framework for building server-side rendered and static web applications.
-- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom user interfaces.
-- **Vercel AI SDK**: The Vercel AI SDK is a library for building AI-powered streaming text and chat UIs.
-- **Groq & Mixtral**: Technologies for processing and understanding user queries.
-- **Langchain.JS**: A JavaScript library focused on text operations, such as text splitting and embeddings.
-- **Brave Search**: A privacy-focused search engine used for sourcing relevant content and images.
-- **Serper API**: Used for fetching relevant video and image results based on the user's query.
-- **OpenAI Embeddings**: Used for creating vector representations of text chunks.
-- **Cheerio**: Utilized for HTML parsing, allowing the extraction of content from web pages.
-- **Ollama (Optional)**: Used for streaming inference and embeddings.
-- **Upstash Redis Rate Limiting (Optional)**: Used for setting up rate limiting for the application.
-- **Upstash Semantic Cache (Optional)**: Used for caching data for faster response times.
+- **Next.js**: Rámec React pro vytváření serverově renderovaných a statických webových aplikací.
+- **Tailwind CSS**: Utility-first CSS framework pro rychlé vytváření vlastních uživatelských rozhraní.
+- **Vercel AI SDK**: Vercel AI SDK je knihovna pro vytváření AI-powered streaming textových a chatových UI.
+- **Groq & Mixtral**: Technologie pro zpracování a porozumění dotazů uživatele.
+- **Langchain.JS**: JavaScriptová knihovna zaměřená na textové operace, jako je rozdělení textu a vnoření.
+- **Brave Search**: Soukromý vyhledávač používaný pro získávání relevantního obsahu a obrázků.
+- **Serper API**: Používá se pro získávání relevantních video a obrázkových výsledků na základě dotazu uživatele.
+- **OpenAI Embeddings**: Používá se pro vytváření vektorových reprezentací textových částí.
+- **Cheerio**: Využívá se pro HTML parsování, což umožňuje extrakci obsahu z webových stránek.
+- **Ollama (Volitelné)**: Používá se pro streaming inference a embeddings.
+- **Upstash Redis Rate Limiting (Volitelné)**: Používá se pro nastavení rate limiting pro aplikaci.
+- **Upstash Semantic Cache (Volitelné)**: Používá se pro ukládání dat pro rychlejší reakční časy.
 
-## Getting Started
+## Začínáme
 
-### Prerequisites 
+### Předpoklady 
 
-- Obtain API keys from OpenAI, Groq, Brave Search, and Serper.
+- Získání API klíčů od OpenAI, Groq, Brave Search a Serper.
 
-#### Prerequisites for Non-Docker Installation
+#### Předpoklady pro instalaci bez Dockeru
 
-- Ensure Node.js and npm are installed on your machine.
+- Ujistěte se, že na vašem počítači je nainstalován Node.js a npm.
 
-#### Prerequisites for Docker Installation
+#### Předpoklady pro instalaci s Dockerem
 
-- Ensure Docker and docker compose are installed on your machine.
+- Ujistěte se, že na vašem počítači je nainstalován Docker a docker compose.
 
-### Obtaining API Keys
+### Získání API klíčů
 
-- **OpenAI API Key**: [Generate your OpenAI API key here](https://platform.openai.com/account/api-keys).
-- **Groq API Key**: [Get your Groq API key here](https://console.groq.com/keys).
-- **Brave Search API Key**: [Obtain your Brave Search API key here](https://brave.com/search/api/).
-- **Serper API Key**: [Get your Serper API key here](https://serper.dev/).
+- **OpenAI API Key**: [Vygenerujte si svůj OpenAI API klíč zde](https://platform.openai.com/account/api-keys).
+- **Groq API Key**: [Získejte si svůj Groq API klíč zde](https://console.groq.com/keys).
+- **Brave Search API Key**: [Získejte si svůj Brave Search API klíč zde](https://brave.com/search/api/).
+- **Serper API Key**: [Získejte si svůj Serper API klíč zde](https://serper.dev/).
 
-### Quick Clone and Deploy
+### Rychlý klon a nasazení
 
-Simple, Easy, Fast and Free - deploy to vercel
+Jednoduché, snadné, rychlé a zdarma - nasadit na vercel
 
-> Make Sure to fill all the API Keys required for the Installation.
+> Ujistěte se, že vyplníte všechny API klíče potřebné pro instalaci.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdevelopersdigest%2Fllm-answer-engine&env=OPENAI_API_KEY,GROQ_API_KEY,BRAVE_SEARCH_API_KEY,SERPER_API&envDescription=ALL%20API%20KEYS%20are%20needed%20for%20this%20application.%20If%20you%20are%20not%20using%20OpenAI%20KEY%20and%20Using%20Groq%20Instead%2C%20then%20just%20enter%20a%20random%20string%20in%20the%20OpenAI%20Key%20section%20so%20it%20wont%20generate%20any%20error%20while%20building%20the%20project.&project-name=llm-answer-engine&repository-name=llm-answer-engine&skippable-integrations=1)
+[![Nasazeno s Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdevelopersdigest%2Fllm-answer-engine&env=OPENAI_API_KEY,GROQ_API_KEY,BRAVE_SEARCH_API_KEY,SERPER_API&envDescription=VŠECHNY%20API%20KLÍČE%20jsou%20potřebné%20pro%20tuto%20aplikaci.%20Pokud%20nepoužíváte%20OpenAI%20KLÍČ%20a%20používáte%20namísto toho%20Groq,%20pak%20do%20sekce%20OpenAI%20Key%20zadejte%20jen%20náhodný%20řetězec,%20aby%20se%20při%20budování%20projektu%20nevygenerovala%20žádná%20chyba.&project-name=llm-answer-engine&repository-name=llm-answer-engine&skippable-integrations=1)
 
 
 
-### Installation
+### Instalace
 
-1. Clone the repository:
+1. Klonování repozitáře:
     ```
     git clone https://github.com/developersdigest/llm-answer-engine.git
     ```
-2. Move in the directory
+2. Přesunutí do adresáře
     ```
     cd llm-answer-engine
     ```
 
-#### Docker Installation
+#### Instalace s Dockerem
 
-3. Edit the `docker-compose.yml` file and add your API keys
+3. Upravte soubor `docker-compose.yml` a přidejte své API klíče
 
-4. Running the Server
+4. Spuštění serveru
 
-To start the server, execute:
+Pro spuštění serveru proveďte:
 ```
-docker compose up -d #for v2
+docker compose up -d #pro v2
 ```
-or
+nebo
 ```
-docker-compose up -d #for v1
+docker-compose up -d #pro v1
 ```
-the server will be listening on the specified port.
+server bude poslouchat na zadaném portu.
 
-#### Non-Docker Installation
+#### Instalace bez Dockeru
 
-3. Install the required dependencies:
+3. Nainstalujte potřebné závislosti:
     ```
     npm install
     ```
-    or
+    nebo
     ```
     bun install
     ```
-4. Create a `.env` file in the root of your project and add your API keys:
+4. Vytvořte soubor `.env` v kořenovém adresáři vašeho projektu a přidejte své API klíče:
     ```
     OPENAI_API_KEY=your_openai_api_key
     GROQ_API_KEY=your_groq_api_key
     BRAVE_SEARCH_API_KEY=your_brave_search_api_key
     SERPER_API=your_serper_api_key
     ```
-5. Running the Server
+5. Spuštění serveru
 
-To start the server, execute:
+Pro spuštění serveru proveďte:
 ```
 npm run dev
 ```
-or
+nebo
 ```
 bun run dev
 ```
 
-the server will be listening on the specified port.
+server bude poslouchat na zadaném portu.
 
-## Editing the Configuration
+## Úprava konfigurace
 
-The configuration file is located in the `app/config.tsx` file. You can modify the following values
+Konfigurační soubor se nachází v souboru `app/config.tsx`. Můžete upravit následující hodnoty
 
 - useOllamaInference: false,
 - useOllamaEmbeddings: false,
@@ -158,59 +158,59 @@ The configuration file is located in the `app/config.tsx` file. You can modify t
 - useSemanticCache: false
 - usePortkey: false
 
-### Function Calling Support (Beta)
-Currently, function calling is supported with the following capabilities:
+### Podpora volání funkcí (Beta)
+V současné době je podpora volání funkcí podporována s následujícími schopnostmi:
 
-- Maps and Locations (Serper Locations API)
-- Shopping (Serper Shopping API)
+- Mapy a Lokace (Serper Locations API)
+- Nakupování (Serper Shopping API)
 - TradingView Stock Data (Free Widget)
 - Spotify (Free API)
-- Any functionality that you would like to see here, please open an issue or submit a PR.
-- To enable function calling and conditional streaming UI (currently in beta), ensure useFunctionCalling is set to true in the config file.
+- Jakoukoli funkcionalitu, kterou byste chtěli vidět zde, otevřete prosím problém nebo zašlete PR.
+- Pro povolení volání funkcí a podmíněného streamování UI (v současné době v beta verzi), ujistěte se, že je v konfiguračním souboru nastaveno useFunctionCalling na true.
 
-### Ollama Support (Partially supported)
-Currently, streaming text responses are supported for Ollama, but follow-up questions are not yet supported.
+### Podpora Ollama (Částečně podporováno)
+V současné době jsou podporovány streaming textové odpovědi pro Ollama, ale následné otázky zatím nejsou podporovány.
 
-Embeddings are supported, however, time-to-first-token can be quite long when using both a local embedding model as well as a local model for the streaming inference. I  recommended decreasing a number of the RAG values specified in the `app/config.tsx` file to decrease the time-to-first-token when using Ollama.
+Embeddings jsou podporovány, ale čas na první token může být docela dlouhý, když se používá jak lokální embedding model, tak lokální model pro streaming inference. Doporučuji snížit některé hodnoty RAG specifikované v souboru `app/config.tsx` pro snížení času na první token při použití Ollama.
 
-To get started, make sure you have the Ollama running model on your local machine and set within the config the model you would like to use and set use OllamaInference and/or useOllamaEmbeddings to true.
+Pro začátek se ujistěte, že máte běžící model Ollama na svém lokálním počítači a nastavte v konfiguraci model, který chcete použít, a nastavte use OllamaInference a/nebo useOllamaEmbeddings na true.
 
-Note: When 'useOllamaInference' is set to true, the model will be used for both text generation, but it will skip the follow-up questions inference step when using Ollama.
+Poznámka: Když je 'useOllamaInference' nastaveno na true, bude model použit jak pro generování textu, ale při použití Ollama bude přeskočen krok inference následných otázek.
 
-More info: https://ollama.com/blog/openai-compatibility
+Více informací: https://ollama.com/blog/openai-compatibility
 
 ### Roadmap
 
-- [] Add document upload + RAG for document search/retrieval
-- [] Add a settings component to allow users to select the model, embeddings model, and other parameters from the UI
-- [] Add support for follow-up questions when using Ollama
-- [Complete] Add support diffusion models (Fal.AI SD3 to start), accessible via '@ mention'
-- [Complete] Add AI Gateway to support multiple models and embeddings. (OpenAI, Azure OpenAI, Anyscale, Google Gemini & Palm, Anthropic, Cohere, Together AI, Perplexity, Mistral, Nomic, AI21, Stability AI, DeepInfra, Ollama, etc)
+- [] Přidat nahrávání dokumentů + RAG pro vyhledávání/získávání dokumentů
+- [] Přidat komponentu nastavení, která umožní uživatelům vybrat model, model vnoření a další parametry z UI
+- [] Přidat podporu pro následné otázky při použití Ollama
+- [Dokončeno] Přidat podporu difuzních modelů (Fal.AI SD3 na začátek), přístupných prostřednictvím '@ mention'
+- [Dokončeno] Přidat AI Gateway pro podporu více modelů a vnoření. (OpenAI, Azure OpenAI, Anyscale, Google Gemini & Palm, Anthropic, Cohere, Together AI, Perplexity, Mistral, Nomic, AI21, Stability AI, DeepInfra, Ollama, atd)
 ```https://github.com/Portkey-AI/gateway```
-- [Complete] Add support for semantic caching to improve response times
-- [Complete] Add support for dynamic and conditionally rendered UI components based on the user's query
+- [Dokončeno] Přidat podporu pro sémantické ukládání ke zlepšení reakčních časů
+- [Dokončeno] Přidat podporu pro dynamické a podmíněně renderované UI komponenty na základě dotazu uživatele
 
-![Example](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN284d3p5azAyNHpubm9mb2F0cnB6MWdtcTdnd2Nkb2d1ZnRtMG0yYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OMpt8ZbBsjphZz6mue/giphy.gif)
+![Příklad](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN284d3p5azAyNHpubm9mb2F0cnB6MWdtcTdnd2Nkb2d1ZnRtMG0yYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OMpt8ZbBsjphZz6mue/giphy.gif)
 
-- [Completed] Add dark mode support based on the user's system preference
+- [Dokončeno] Přidat podporu pro dark mode podle uživatelovy systémové preference
 
 ### Backend + Node Only Express API
 
-[Watch the express tutorial here](https://youtu.be/43ZCeBTcsS8) for a detailed guide on setting up and running this project.
-In addition to the Next.JS version of the project, there is a backend only version that uses Node.js and Express. Which is located in the 'express-api' directory. This is a standalone version of the project that can be used as a reference for building a similar API. There is also a readme file in the 'express-api' directory that explains how to run the backend version.
+[Sledujte express tutoriál zde](https://youtu.be/43ZCeBTcsS8) pro podrobný průvodce nastavením a spuštěním tohoto projektu.
+Kromě Next.JS verze projektu je zde také verze pouze s backendem, která používá Node.js a Express. Ta se nachází v adresáři 'express-api'. Toto je samostatná verze projektu, kterou lze použít jako referenci pro vytváření podobného API. V adresáři 'express-api' je také readme soubor, který vysvětluje, jak spustit backendovou verzi.
 
 ### Upstash Redis Rate Limiting
-[Watch the Upstash Redis Rate Limiting tutorial here](https://youtu.be/3_aNVu6EU3Y) for a detailed guide on setting up and running this project.
-Upstash Redis Rate Limiting is a free tier service that allows you to set up rate limiting for your application. It provides a simple and easy-to-use interface for configuring and managing rate limits. With Upstash, you can easily set limits on the number of requests per user, IP address, or other criteria. This can help prevent abuse and ensure that your application is not overwhelmed with requests.
+[Sledujte Upstash Redis Rate Limiting tutoriál zde](https://youtu.be/3_aNVu6EU3Y) pro podrobný průvodce nastavením a spuštěním tohoto projektu.
+Upstash Redis Rate Limiting je bezplatná služba, která vám umožňuje nastavit rate limiting pro vaši aplikaci. Poskytuje jednoduché a snadno použitelné rozhraní pro konfiguraci a správu rate limitů. S Upstash můžete snadno nastavit limity na počet požadavků na uživatele, IP adresu nebo jiná kritéria. To může pomoci zabránit zneužití a zajistit, že vaše aplikace nebude přetížena požadavky.
 
-## Contributing
+## Přispívání
 
-Contributions to the project are welcome. Feel free to fork the repository, make your changes, and submit a pull request. You can also open issues to suggest improvements or report bugs.
+Příspěvky do projektu jsou vítány. Nebojte se forkovat repozitář, provést své změny a odeslat pull request. Můžete také otevřít problémy, abyste navrhli vylepšení nebo nahlásili chyby.
 
 
-## License
+## Licence
 
-This project is licensed under the MIT License.
+Tento projekt je licencován pod licencí MIT.
 
 [![Star History Chart](https://api.star-history.com/svg?repos=developersdigest/llm-answer-engine&type=Date)](https://star-history.com/#developersdigest/llm-answer-engine&Date)
 
